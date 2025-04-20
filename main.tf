@@ -108,7 +108,7 @@ resource "aws_subnet" "private_data_subnet_az1" {
 }
 
 # create private data subnet az2
-resource "aws_subnet" "private_data_subnet_az2" {
+/*resource "aws_subnet" "private_data_subnet_az2" {
   vpc_id                  = aws_vpc.vpc.id
   cidr_block              = var.private_app_subnet_az2_cidr
   availability_zone       = data.aws_availability_zones.available_zones.names[1]
@@ -117,4 +117,4 @@ resource "aws_subnet" "private_data_subnet_az2" {
   tags = {
     Name = "${var.project_name}-${var.environment}-private-data-az2"
   }
-}
+}*/

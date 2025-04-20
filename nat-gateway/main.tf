@@ -87,7 +87,7 @@ resource "aws_route_table_association" "private_app_subnet_az2_rt_az2_associatio
 }
 
 # Associate Private Data Subnet AZ2 with Private Route Table AZ2
-resource "aws_route_table_association" "private_data_subnet_az2_rt_az2_association" {
+/*resource "aws_route_table_association" "private_data_subnet_az2_rt_az2_association" {
   subnet_id      = var.private_data_subnet_az2_id  # Using the correct variable
   route_table_id = aws_route_table.private_route_table_az2.id
-}
+}*/
