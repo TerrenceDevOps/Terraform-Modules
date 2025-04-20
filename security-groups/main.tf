@@ -103,7 +103,7 @@ resource "aws_security_group" "database_security_group" {
     from_port       = 3306
     to_port         = 3306
     protocol        = "tcp"
-    security_groups = ["aws_security_group.app_server_security_group.id"]
+    security_groups = [aws_security_group.app_server_security_group.id]
   }
 
   ingress {
@@ -111,7 +111,7 @@ resource "aws_security_group" "database_security_group" {
     from_port       = 3306
     to_port         = 3306
     protocol        = "tcp"
-    security_groups = ["aws_security_group.bastion_security_group.id"]
+    security_groups = [aws_security_group.bastion_security_group.id]
   }
 
   egress {
